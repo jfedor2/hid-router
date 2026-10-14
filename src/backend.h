@@ -32,7 +32,8 @@ const ButtonMap* backend_valid_outputs(int* count);
 // Returns true if the controller should not be used as an input.
 bool backend_ignore_gamepad(SDL_Gamepad* gamepad);
 // Whether a controller we have no settings for starts out enabled.
-bool backend_default_enabled(const char* name);
+// gamepad is null for controllers that do not come from SDL.
+bool backend_default_enabled(SDL_Gamepad* gamepad, const char* name);
 
 // Called on WM_DEVICECHANGE.
 void backend_on_device_change();

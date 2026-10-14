@@ -43,5 +43,8 @@ target_link_libraries(any2xinput PRIVATE hidapi::hidapi)
 
 add_app(sdl-transmitter src/sdl_transmitter.cpp)
 
+add_app(any2flex src/any2flex.cpp)
+target_link_libraries(any2flex PRIVATE hidapi::hidapi)
+
 # Set the startup project for Visual Studio
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT any2xinput)

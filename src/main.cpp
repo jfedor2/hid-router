@@ -208,7 +208,7 @@ void AddController(SDL_JoystickID jid, SDL_Gamepad* gc, const char* name, const 
             new_info.stick_map[i] = controller_settings[key].stick_map[i];
         }
     } else {
-        bool default_enabled = backend_default_enabled(name);
+        bool default_enabled = backend_default_enabled(gc, name);
         controller_settings[key].enabled = default_enabled;
         controller_settings[key].rumble = true;
         new_info.enabled = default_enabled;

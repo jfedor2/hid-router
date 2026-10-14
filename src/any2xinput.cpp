@@ -227,7 +227,7 @@ bool backend_ignore_gamepad(SDL_Gamepad* gamepad) {
     return SDL_GetGamepadVendor(gamepad) == DONGLE_VID && SDL_GetGamepadProduct(gamepad) == DONGLE_PID;
 }
 
-bool backend_default_enabled(const char* name) {
+bool backend_default_enabled(SDL_Gamepad* gamepad, const char* name) {
     return true;
 }
 

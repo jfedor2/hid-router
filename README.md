@@ -14,6 +14,8 @@ For downloads see the [latest release](https://github.com/jfedor2/hid-router/rel
 
 ![sdl-transmitter diagram](images/sdl-transmitter-diagram.png)
 ![any2xinput diagram](images/any2xinput-diagram.png)
+![any2flex diagram](images/any2flex-diagram.png)
+
 ![any2xinput screenshot](images/any2xinput-screenshot.png)
 
 ## License

@@ -415,7 +415,7 @@ bool backend_ignore_gamepad(SDL_Gamepad* gamepad) {
     return false;
 }
 
-bool backend_default_enabled(const char* name) {
+bool backend_default_enabled(SDL_Gamepad* gamepad, const char* name) {
     return !(name && strstr(name, "HID Receiver") != nullptr);
 }
 
