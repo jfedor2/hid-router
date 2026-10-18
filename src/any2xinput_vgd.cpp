@@ -185,7 +185,7 @@ void send_xusb_report(const ControllerState& state) {
     }
 }
 
-const char* const BACKEND_APP_NAME = "any2xinput";
+const char* const BACKEND_APP_NAME = "any2xinput-vgd";
 const bool BACKEND_HAS_RUMBLE = true;
 const bool BACKEND_DELAY_AFTER_SEND = false;
 

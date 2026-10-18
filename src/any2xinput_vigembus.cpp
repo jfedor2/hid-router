@@ -19,7 +19,7 @@ const unsigned short VIRTUAL_VID = 0xCAFE;
 const unsigned short VIRTUAL_PID = 0xBAE2;
 
 // The dongle takes reports at 1000 Hz and sending to it blocks, which limits
-// how often any2xinput sends. We do the same here.
+// how often any2xinput-vgd sends. We do the same here.
 const Uint64 MIN_SEND_INTERVAL_NS = 1000000;
 
 const char* const ButtonMapNames[] = {

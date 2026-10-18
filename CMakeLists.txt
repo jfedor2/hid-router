@@ -41,8 +41,8 @@ function(add_app name backend_source)
   target_include_directories(${name} PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/external/json/single_include)
 endfunction()
 
-add_app(any2xinput src/any2xinput.cpp)
-target_link_libraries(any2xinput PRIVATE hidapi::hidapi)
+add_app(any2xinput-vgd src/any2xinput_vgd.cpp)
+target_link_libraries(any2xinput-vgd PRIVATE hidapi::hidapi)
 
 add_app(sdl-transmitter src/sdl_transmitter.cpp)
 
@@ -53,4 +53,4 @@ add_app(any2xinput-vigembus src/any2xinput_vigembus.cpp)
 target_link_libraries(any2xinput-vigembus PRIVATE ViGEmClient::ViGEmClient setupapi)
 
 # Set the startup project for Visual Studio
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT any2xinput)
+set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT any2xinput-vgd)
