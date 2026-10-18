@@ -26,3 +26,7 @@ jobs:
       with:
         name: any2flex
         path: build/Release/any2flex.exe
+    - uses: actions/upload-artifact@v7
+      with:
+        name: any2xinput-vigembus
+        path: build/Release/any2xinput-vigembus.exe

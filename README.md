@@ -8,6 +8,7 @@ You can pick which controllers you want to use and optionally remap the inputs. 
 
 * `sdl-transmitter`: acts as the Transmitter component of a [HID Forwarder](https://github.com/jfedor2/hid-forwarder) setup. This lets you send the inputs to another machine over a network or serial link.
 * `any2xinput`: sends the inputs to a [Virtual Gamepad Dongle](https://github.com/jfedor2/virtual-gamepad-dongle), creating an XInput-compatible virtual gamepad on your system.
+* `any2xinput-vigembus`: creates an XInput-compatible virtual gamepad using the [ViGEmBus](https://github.com/nefarius/ViGEmBus) driver. The driver has to be installed.
 * `any2flex`: sends the inputs to the PC port on a connected Hori Flex Controller. The Flex Controller then sends them out to your Switch or whatever it's plugged into.
 
 For downloads see the [latest release](https://github.com/jfedor2/hid-router/releases/latest).

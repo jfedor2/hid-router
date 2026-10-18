@@ -15,6 +15,9 @@ add_subdirectory(external/SDL)
 set(BUILD_SHARED_LIBS OFF CACHE BOOL "Build static libraries" FORCE)
 add_subdirectory(external/hidapi)
 
+# ViGEmClient
+add_subdirectory(external/ViGEmClient)
+
 # Dear ImGui
 set(IMGUI_DIR "${CMAKE_CURRENT_SOURCE_DIR}/external/imgui")
 add_library(imgui STATIC
@@ -45,6 +48,9 @@ add_app(sdl-transmitter src/sdl_transmitter.cpp)
 
 add_app(any2flex src/any2flex.cpp)
 target_link_libraries(any2flex PRIVATE hidapi::hidapi)
+
+add_app(any2xinput-vigembus src/any2xinput_vigembus.cpp)
+target_link_libraries(any2xinput-vigembus PRIVATE ViGEmClient::ViGEmClient setupapi)
 
 # Set the startup project for Visual Studio
 set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT any2xinput)
