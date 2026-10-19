@@ -13,9 +13,9 @@ You can pick which controllers you want to use and optionally remap the inputs. 
 
 For downloads see the [latest release](https://github.com/jfedor2/hid-router/releases/latest).
 
-![sdl-transmitter diagram](images/sdl-transmitter-diagram.png)
-![any2xinput-vgd diagram](images/any2xinput-vgd-diagram.png)
-![any2flex diagram](images/any2flex-diagram.png)
+Please note that the tools don't hide the controllers they read inputs from. Other applications on the same system might still see them, which may result in duplicate inputs.
+
+![system architecture diagram](images/diagram.png)
 
 ![any2xinput-vgd screenshot](images/any2xinput-vgd-screenshot.png)
 
