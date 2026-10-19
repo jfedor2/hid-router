@@ -13,12 +13,21 @@ You can pick which controllers you want to use and optionally remap the inputs. 
 
 For downloads see the [latest release](https://github.com/jfedor2/hid-router/releases/latest).
 
+For examples of HID Transmitters that can be plugged into these tools as inputs, see: [Overlay HID Transmitter](https://github.com/jfedor2/overlay-hid-transmitter), [Voice HID Transmitter](https://github.com/jfedor2/voice-hid-transmitter), [Face HID Transmitter](https://github.com/jfedor2/face-hid-transmitter).
+
 Please note that the tools don't hide the controllers they read inputs from. Other applications on the same system might still see them, which may result in duplicate inputs.
 
 ![system architecture diagram](images/diagram.png)
 
 ![any2xinput-vgd screenshot](images/any2xinput-vgd-screenshot.png)
 
-## License
+## License and acknowledgements
 
 The software in this repository is licensed under the [MIT License](LICENSE).
+
+Uses:
+* [SDL](https://github.com/libsdl-org/SDL) (zlib)
+* [Dear ImGui](https://github.com/ocornut/imgui) (MIT)
+* [nlohmann/json](https://github.com/nlohmann/json) (MIT)
+* [ViGEmClient](https://github.com/nefarius/ViGEmClient) (MIT)
+* [hidapi](https://github.com/libusb/hidapi) ([BSD-style](https://github.com/libusb/hidapi/blob/d6b2a974608dec3b76fb1e36c189f22b9cf3650c/LICENSE-bsd.txt))
